@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+:root{
+    --color-main: #396aff;
+    --bg2: #dce5ff;
+    --bg: #fbfefd;
+    --main-accent: #e9eefd;
+    --main-text: #4b5876;
+    --shadow: rgba(17,17,26,0.1) 2px 2px 16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body{
+    background: var(--bg2);
+    overflow-x: hidden;
+}
+#menu-toggle{
+    display: none;
+}
+img{
+    width: 90%;
+    height: auto;    
+    border-radius: 5px;
+}
+.sidebar{
+    width: 345px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1rem 1.2rem;
+}
+.sidebar-container{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+}
+.brand{
+    padding-bottom: 1rem;
+}
+.brand h3{
+    color: #444;
+}
+.brand h3 span{
+    color: var(--color-main);
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-right: .5rem;
+}
+.sidebar-avartar{
+    display: grid;
+    grid-template-columns: 140px auto;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+.avartar-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-content{
+    margin-left: 345px;
+    width: calc(100vw - 345px);
+    padding: 1rem 1.2rem;
+}
